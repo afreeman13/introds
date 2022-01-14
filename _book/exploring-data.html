@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Exploring data | Introduction to Data Science @ Capital CC</title>
+  <meta name="description" content="DTS 201 resources for students" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Exploring data | Introduction to Data Science @ Capital CC" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://introds.org/" />
+  <meta property="og:image" content="https://introds.org//introds.png" />
+  <meta property="og:description" content="DTS 201 resources for students" />
+  <meta name="github-repo" content="dukestatsci/introds" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Exploring data | Introduction to Data Science @ Capital CC" />
+  <meta name="twitter:site" content="@statsciduke" />
+  <meta name="twitter:description" content="DTS 201 resources for students" />
+  <meta name="twitter:image" content="https://introds.org//introds.png" />
+
+<meta name="author" content="Dr. Andre Freemanm, Capital CC" />
+
+
+<meta name="date" content="2022-01-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="hello-world.html"/>
+<link rel="next" href="ethics.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/introds.css" type="text/css" />
+<link rel="stylesheet" href="css/fontawesome/css/all.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science in a Box</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="part"><span><b>I Videos</b></span></li>
+<li class="chapter" data-level="1" data-path="hello-world.html"><a href="hello-world.html"><i class="fa fa-check"></i><b>1</b> Hello world</a></li>
+<li class="chapter" data-level="2" data-path="exploring-data.html"><a href="exploring-data.html"><i class="fa fa-check"></i><b>2</b> Exploring data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="exploring-data.html"><a href="exploring-data.html#visualising-data"><i class="fa fa-check"></i><b>2.1</b> Visualising data</a></li>
+<li class="chapter" data-level="2.2" data-path="exploring-data.html"><a href="exploring-data.html#wrangling-and-tidying-data"><i class="fa fa-check"></i><b>2.2</b> Wrangling and tidying data</a></li>
+<li class="chapter" data-level="2.3" data-path="exploring-data.html"><a href="exploring-data.html#importing-and-recoding-data"><i class="fa fa-check"></i><b>2.3</b> Importing and recoding data</a></li>
+<li class="chapter" data-level="2.4" data-path="exploring-data.html"><a href="exploring-data.html#communicating-data-science-results-effectively"><i class="fa fa-check"></i><b>2.4</b> Communicating data science results effectively</a></li>
+<li class="chapter" data-level="2.5" data-path="exploring-data.html"><a href="exploring-data.html#web-scraping-and-programming"><i class="fa fa-check"></i><b>2.5</b> Web scraping and programming</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ethics.html"><a href="ethics.html"><i class="fa fa-check"></i><b>3</b> Data science ethics</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="ethics.html"><a href="ethics.html#misrepresentation"><i class="fa fa-check"></i><b>3.1</b> Misrepresentation</a></li>
+<li class="chapter" data-level="3.2" data-path="ethics.html"><a href="ethics.html#data-privacy"><i class="fa fa-check"></i><b>3.2</b> Data privacy</a></li>
+<li class="chapter" data-level="3.3" data-path="ethics.html"><a href="ethics.html#algorithmic-bias"><i class="fa fa-check"></i><b>3.3</b> Algorithmic bias</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html"><i class="fa fa-check"></i><b>4</b> Making rigorous conclusions</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#modelling-data"><i class="fa fa-check"></i><b>4.1</b> Modelling data</a></li>
+<li class="chapter" data-level="4.2" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#classification-and-model-building"><i class="fa fa-check"></i><b>4.2</b> Classification and model building</a></li>
+<li class="chapter" data-level="4.3" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#model-validation"><i class="fa fa-check"></i><b>4.3</b> Model validation</a></li>
+<li class="chapter" data-level="4.4" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#uncertainty-quantification"><i class="fa fa-check"></i><b>4.4</b> Uncertainty quantification</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="looking-forward.html"><a href="looking-forward.html"><i class="fa fa-check"></i><b>5</b> Looking further</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="looking-forward.html"><a href="looking-forward.html#text-analysis"><i class="fa fa-check"></i><b>5.1</b> Text analysis</a></li>
+<li class="chapter" data-level="5.2" data-path="looking-forward.html"><a href="looking-forward.html#interactive-web-apps"><i class="fa fa-check"></i><b>5.2</b> Interactive web apps</a></li>
+<li class="chapter" data-level="5.3" data-path="looking-forward.html"><a href="looking-forward.html#machine-learning"><i class="fa fa-check"></i><b>5.3</b> Machine learning</a></li>
+<li class="chapter" data-level="5.4" data-path="looking-forward.html"><a href="looking-forward.html#bayesian-inference"><i class="fa fa-check"></i><b>5.4</b> Bayesian inference</a></li>
+</ul></li>
+<li class="part"><span><b>II Computing</b></span></li>
+<li class="chapter" data-level="" data-path="computing.html"><a href="computing.html"><i class="fa fa-check"></i>Access</a></li>
+<li class="chapter" data-level="" data-path="troubleshooting.html"><a href="troubleshooting.html"><i class="fa fa-check"></i>Troubleshooting</a></li>
+<li class="part"><span><b>III Sections</b></span></li>
+<li class="chapter" data-level="" data-path="sta198.html"><a href="sta198.html"><i class="fa fa-check"></i>STA 198</a></li>
+<li class="chapter" data-level="" data-path="sta199-1.html"><a href="sta199-1.html"><i class="fa fa-check"></i>STA 199 - Section 1</a></li>
+<li class="chapter" data-level="" data-path="sta199-2.html"><a href="sta199-2.html"><i class="fa fa-check"></i>STA 199 - Section 2</a></li>
+<li class="chapter" data-level="" data-path="sta199-3.html"><a href="sta199-3.html"><i class="fa fa-check"></i>STA 199 - Section 3</a></li>
+<li class="part"><span><b>IV Additional resources</b></span></li>
+<li class="chapter" data-level="" data-path="tutorials.html"><a href="tutorials.html"><i class="fa fa-check"></i>Tutorials</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Data Science @ Capital CC</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="exploring-data" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Exploring data</h1>
+<p>This unit focuses on data visualization and data wrangling.
+Specifically we cover fundamentals of data and data visualization, confounding variables, and Simpson’s paradox as well as the concept of tidy data, data import, data cleaning, and data curation.
+We end the unit with web scraping and introduce the idea of iteration in preparation for the next unit.
+Also in this unit students are introduced to the toolkit: R, RStudio, R Markdown, Git, and GitHub.</p>
+<div id="visualising-data" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Visualising data</h2>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 1: Data and visualisation</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d01-data-viz/u2-d01-data-viz.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/FddF4b_GuTI">Video</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 2: Visualising data with ggplot2</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d02-ggplot2/u2-d02-ggplot2.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/s2NF2J36ljE">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/data-visualisation.html">Chp 3 - Data visualization</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 3: Visualising numerical data</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d03-viz-num/u2-d03-viz-num.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/waBabVTI8ec">Video</a></p>
+</div>
+<div class="reading">
+<p>IMS :: <a href="https://openintro-ims.netlify.app/explore-numerical.html">Chp 4 - Exploring numerical data</a>:::</p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 4: Visualising categorical data</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d04-viz-cat/u2-d04-viz-cat.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/21h3rEO8k2E">Video</a></p>
+</div>
+<div class="reading">
+<p>IMS :: <a href="https://openintro-ims.netlify.app/explore-categorical.html">Chp 5 - Exploring categorical data</a></p>
+</div>
+</div>
+</div>
+<div id="wrangling-and-tidying-data" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Wrangling and tidying data</h2>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 5: Tidy data</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d05-tidy-data/u2-d05-tidy-data.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/Ux85eR3h9hw">Video</a></p>
+</div>
+<div class="reading">
+<p>JSS :: <a href="https://www.jstatsoft.org/article/view/v059i10">Tidy data</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 6: Grammar of data wrangling</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d06-grammar-wrangle/u2-d06-grammar-wrangle.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/ZCaYBES_VEk">Video</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 7: Working with a single data frame</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d07-single-df/u2-d07-single-df.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/0229Uq2hkJo">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/transform.html">Chp 5 - Data transformation</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 8: Working with multiple data frames</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d08-multi-df/u2-d08-multi-df.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/VdV5ABsaf5Y">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/relational-data.html">Chp 13 - Relational data</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 9: Tidying data</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d09-tidying/u2-d09-tidying.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/x3KM5uxaFdI">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/tidy-data.html">Chp 12 - Tidy data</a></p>
+</div>
+</div>
+</div>
+<div id="importing-and-recoding-data" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Importing and recoding data</h2>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 10: Data types</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d10-data-types/u2-d10-data-types.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u2-d10-data-types">Source</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/WsxLbtWbEfc">Video</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 11: Data classes</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d11-data-classes/u2-d11-data-classes.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u2-d11-data-classes">Source</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/dozvSVQcqqg">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/factors.html">Chp 15 - Factors</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 12: Importing data</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d12-data-import/u2-d12-data-import.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/tIMaRYiuEFA">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/data-import.html">Chp 11 - Data import</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 13: Recoding data</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d13-data-recode/u2-d13-data-recode.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/O8qxV3N4D5Q">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/dates-and-times.html">Sec 16.1 - 16.3 - Dates and times</a></p>
+</div>
+</div>
+</div>
+<div id="communicating-data-science-results-effectively" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Communicating data science results effectively</h2>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 14: Tips for effective data visualization</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d14-effective-dataviz/u2-d14-effective-dataviz.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/ZrifrBvFWgg">Video</a></p>
+</div>
+<div class="reading">
+<p>IMS :: <a href="https://openintro-ims.netlify.app/explore-applications.html">Chp 6 - Applications: Explore</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 15: Scientific studies and confounding</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d15-studies-confounding/u2-d15-studies-confounding.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/WnMzTBrZDcc">Video</a></p>
+</div>
+<div class="reading">
+<p>IMS :: <a href="https://openintro-ims.netlify.app/data-design.html">Chp 2 - Study design</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 16: Simpson’s paradox</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d16-simpsons-paradox/u2-d16-simpsons-paradox.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/sdas62v0iJU">Video</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 17: Doing data science</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d17-doing-data-science/u2-d17-doing-data-science.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/b9lSW0kyqBg">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/exploratory-data-analysis.html">Chp 7 - Exploratory data analysis</a></p>
+</div>
+</div>
+</div>
+<div id="web-scraping-and-programming" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Web scraping and programming</h2>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 18: Web scraping</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d18-web-scrape/u2-d18-web-scrape.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/99Hkmfb2i80">Video</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 19: Scraping top 250 movies on IMDB</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d19-top-250-imdb/u2-d19-top-250-imdb.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/YmKULNLsDsU">Video</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 20: Web scraping considerations</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d20-considerations/u2-d20-considerations.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/LONRJHMvSyU">Video</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 21: Functions</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d21-functions/u2-d21-functions.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/6KWlPhPMluE">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/functions.html">Chp 19 - Functions</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 22: Iteration</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d22-iteration/u2-d22-iteration.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/x3UMny1fQhc">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/iteration.html">Chp 20 - Iteration</a></p>
+</div>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="hello-world.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ethics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/dukestatsci/introds/edit/master/01-exploring-data.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
