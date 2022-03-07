@@ -50,6 +50,20 @@ IMS :: [Chp 2 - Study design](https://openintro-ims.netlify.app/data-design.html
 :::
 :::
 
+## Lab: Simpsons Paradox {.unnumbered}
+
+<p>
+
+Download and open the **Simpsons Paradox** R-markdown file from Blackboard.
+This file is contained within a zip file.
+Open it in R-Studio.
+
+**Instructions:**
+
+1.  Knit the markdown document to make sure the file compiles successfully.
+2.  Edit the markdown document as instructed.
+3.  Rename and upload the completed markdown file to the assignment in Blackboard.
+
 ## Exercise: Brexit & Telling Stories {.unnumbered}
 
 <p>
