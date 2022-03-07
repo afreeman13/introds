@@ -21,8 +21,6 @@ link-citations: yes
 
 This website hosts the supplementary course videos (and the slide decks used in the videos) as well as information on access to computational resources for the courses.
 
-<br>
-
 ## License {.unnumbered}
 
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a><br />This online work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a>.
