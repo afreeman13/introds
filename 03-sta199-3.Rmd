@@ -1,9 +1,0 @@
-# STA 199 - Section 3 {#sta199-3 .unnumbered}
-
-**Introduction to Data Science and Statistical Thinking (STA 199-003)**
-
-In Spring 2022, this section of STA 199 is taught by [Prof. Alexander Fisher](https://scholars.duke.edu/person/Alexander.Fisher).
-
-The TAs for the course are Rob Kravec, Camilla Yue, Steven Winter, Shirley Mathur, Margaret Reed, Evan Dragich, Mariana Izon and Shannon Houser.
-
-Go to the [**STA 199 - Section 3 course website**](https://sta199-sp22-003.netlify.app/) for course specific information.

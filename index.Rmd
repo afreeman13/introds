@@ -2,24 +2,26 @@
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 title: "Introduction to Data Science @ Capital CC"
-author: "Dr. Andre Freemanm, Capital CC"
+author: "Dr. Andre Freeman, Capital CC"
 description: "DTS 201 resources for students"
 date: "`r Sys.Date()`"
-github-repo: dukestatsci/introds
-twitter-handle: statsciduke
-cover-image: introds.png
+github-repo: https://github.com/afreeman13/introds
+twitter-handle: 
+cover-image: DSboxCCC.png
 url: 'https\://introds.org/'
 documentclass: book
 link-citations: yes
 ---
 
-# Welcome {.unnumbered}
+# Welcome to DTS 201 {.unnumbered}
 
-<img src="Tidy.png" class="cover"/>Welcome to the centralized resources website for the Introduction to Data Science courses offered by the Department of Statistical Science at Duke University.
+<img src="DSatCCC.png" width="587" height="283"/>
+
+<br>Welcome to the website for the <b>Data Science in R</b> at Capital Community College!
 
 This website hosts the supplementary course videos (and the slide decks used in the videos) as well as information on access to computational resources for the courses.
 
-<br><br><br>
+<br>
 
 ## License {.unnumbered}
 

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Week 1 | Introduction to Data Science @ Capital CC</title>
+<meta name="author" content="Dr. Andre Freeman, Capital CC">
+<meta name="description" content="Welcome to DTS 201!  In Week 1, you will be introduced to Data Science and begin using R Studio. Check out these videos and review the corresponding slides. Unit 1 provides an introduction to Data...">
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta property="og:title" content="Week 1 | Introduction to Data Science @ Capital CC">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://introds.org/week-1.html">
+<meta property="og:image" content="https://introds.org//DSboxCCC.png">
+<meta property="og:description" content="Welcome to DTS 201!  In Week 1, you will be introduced to Data Science and begin using R Studio. Check out these videos and review the corresponding slides. Unit 1 provides an introduction to Data...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Week 1 | Introduction to Data Science @ Capital CC">
+<meta name="twitter:description" content="Welcome to DTS 201!  In Week 1, you will be introduced to Data Science and begin using R Studio. Check out these videos and review the corresponding slides. Unit 1 provides an introduction to Data...">
+<meta name="twitter:image" content="https://introds.org//DSboxCCC.png">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="css/introds.css">
+<link rel="stylesheet" href="css/fontawesome/css/all.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Introduction to Data Science @ Capital CC</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Welcome to DTS 201</a></li>
+<li class="book-part">Introduction</li>
+<li><a class="active" href="week-1.html">Week 1</a></li>
+<li class="book-part">Exploring Data</li>
+<li><a class="" href="week-2.html">Week 2</a></li>
+<li><a class="" href="week-3.html">Week 3</a></li>
+<li><a class="" href="week-4.html">Week 4</a></li>
+<li><a class="" href="week-5.html">Week 5</a></li>
+<li><a class="" href="week-6.html">Week 6</a></li>
+<li><a class="" href="week-7.html">Week 7</a></li>
+<li><a class="" href="week-9.html">Week 9</a></li>
+<li><a class="" href="week-10.html">Week 10</a></li>
+<li><a class="" href="week-11.html">Week 11</a></li>
+<li><a class="" href="week-12.html">Week 12</a></li>
+<li><a class="" href="week-13.html">Week 13</a></li>
+<li><a class="" href="week-14.html">Week 14</a></li>
+<li class="book-part">What’s Next?</li>
+<li><a class="" href="looking-further.html">Looking Further</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/afreeman13/introds">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="week-1" class="section level1 unnumbered">
+<h1>Week 1<a class="anchor" aria-label="anchor" href="#week-1"><i class="fas fa-link"></i></a>
+</h1>
+<div id="welcome-to-dts-201-1" class="section level2 unnumbered">
+<h2>Welcome to DTS 201!<a class="anchor" aria-label="anchor" href="#welcome-to-dts-201-1"><i class="fas fa-link"></i></a>
+</h2>
+<p>
+</p>
+<p>In Week 1, you will be introduced to Data Science and begin using R Studio.
+Check out these videos and review the corresponding slides.
+Unit 1 provides an introduction to Data Science.</p>
+<div class="slide-deck">
+<p><strong>Unit 1 - Deck 1: Welcome</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u1-d01-welcome/u1-d01-welcome.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/OJ1xR0ObhIw">Video</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 1 - Deck 2: Meet the toolkit - Programming</strong></p>
+<div class="slides">
+<p><a href="https://dukestatsci.github.io/introds/slides/02-meet-toolkit-r/02-meet-toolkit-r.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/Q2QN1RpvLq8">Video</a></p>
+</div>
+<div class="reading">
+<ul>
+<li>R4DS :: <a href="https://r4ds.had.co.nz/explore-intro.html">Chp 2 - Introduction</a>
+</li>
+<li>IMS :: <a href="https://openintro-ims.netlify.app/data-hello.html">Chp 1 - Hello data</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="install-r-r-studio" class="section level2 unnumbered">
+<h2>Install R &amp; R-Studio<a class="anchor" aria-label="anchor" href="#install-r-r-studio"><i class="fas fa-link"></i></a>
+</h2>
+<p>Watch the video below for instructions on how to download R and R-Studio onto your computer.
+These are free programs that you can place on your computer.
+You will need R-Studio to complete the HW assignments, labs, and projects.</p>
+<div class="video">
+<p><a href="https://www.youtube.com/watch?v=TFGYlKvQEQ4">Video</a></p>
+</div>
+</div>
+<div id="exercise-un-votes" class="section level2 unnumbered">
+<h2>Exercise: UN Votes<a class="anchor" aria-label="anchor" href="#exercise-un-votes"><i class="fas fa-link"></i></a>
+</h2>
+<p>
+</p>
+<p>Watch this video that introduces the AE-01 UN Votes assignment (8 minutes).</p>
+<div class="video">
+<p><a href="https://www.youtube.com/watch?v=r-uTBEclM1E">Video</a></p>
+</div>
+<p>
+</p>
+<p>Note: You will not complete the assignment in R Studio Cloud as indicated in the video, but will instead complete the activity in your RStudio program on your computer.
+Download the <strong>UN Votes</strong> R-Markdown document from Blackboard, and open it in RStudio.
+When you make changes to the markdown document, and then knit it, the changes will be saved.</p>
+<p><strong>Instructions:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Insert your name as the “author”.</p></li>
+<li><p>(Part 1) In the paragraph below the Introduction, respond to these questions for the countries France, United Kingdom, and United States.</p></li>
+</ol>
+<ul>
+<li>How do various countries vote in the United Nations General Assembly?</li>
+<li>How have their voting patterns evolved throughout time?</li>
+<li>How similarly or differently do they view certain issues?</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>(Part 2) Change the graph to show the data for three other countries.</li>
+</ol>
+<ul>
+<li>Modify the code to make this change.</li>
+<li>Save all changes.</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Rename the markdown file with your name.
+For example if your name is Joe Smith, name the file “jsmithunvotes.Rmd”, and save the file to your computer.</p></li>
+<li><p>Upload your revised markdown document to the assignment in Blackboard.</p></li>
+</ol>
+</div>
+<div id="exercise-bechdel" class="section level2 unnumbered">
+<h2>Exercise: Bechdel<a class="anchor" aria-label="anchor" href="#exercise-bechdel"><i class="fas fa-link"></i></a>
+</h2>
+<p>
+</p>
+<p>Download the <strong>Bechdel</strong> R-markdown file from Blackboard.
+Open it in RStudio.</p>
+<p><strong>Instructions:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Insert your name as the “author”.</p></li>
+<li><p>Update the markdown document as instructed in the markdown file.</p></li>
+<li><p>Save and rename the file as “yourname_bechdel.Rmd”.</p></li>
+<li><p>Upload your revised markdown document to the assignment in Blackboard.</p></li>
+</ol>
+</div>
+</div>
+
+
+
+  <div class="chapter-nav">
+<div class="prev"><a href="index.html">Welcome to DTS 201</a></div>
+<div class="next"><a href="week-2.html">Week 2</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#week-1">Week 1</a></li>
+<li><a class="nav-link" href="#welcome-to-dts-201-1">Welcome to DTS 201!</a></li>
+<li><a class="nav-link" href="#install-r-r-studio">Install R &amp; R-Studio</a></li>
+<li><a class="nav-link" href="#exercise-un-votes">Exercise: UN Votes</a></li>
+<li><a class="nav-link" href="#exercise-bechdel">Exercise: Bechdel</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/afreeman13/introds/blob/master/01-week1.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/afreeman13/introds/edit/master/01-week1.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Introduction to Data Science @ Capital CC</strong>" was written by Dr. Andre Freeman, Capital CC. It was last built on 2022-03-06.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

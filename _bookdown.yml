@@ -1,27 +1,26 @@
 book_filename: "introds"
 delete_merged_file: true
 language:
-  ui:
-    chapter_name: "Chapter "
 
 rmd_files: [
+  
   "index.Rmd",
   
-  "01-hello-world.Rmd",
-  "01-exploring-data.Rmd",
-  "01-ethics.Rmd",
-  "01-making-rigorous-conclusions.Rmd",
-  "01-looking-further.Rmd",
+  "01-week1.Rmd",
   
-  "02-access.Rmd",
-  "02-troubleshooting.Rmd",
-  
-  "03-sta198.Rmd",
-  "03-sta199-1.Rmd",
-  "03-sta199-2.Rmd",
-  "03-sta199-3.Rmd",
-  
-  "04-tutorials.Rmd"
+  "02-week2.Rmd",
+  "02-week3.Rmd",
+  "02-week4.Rmd",
+  "02-week5.Rmd",
+  "02-week6.Rmd",
+  "02-week7.Rmd",
+  "02-week9.Rmd",
+  "02-week10.Rmd",
+  "03-week11.Rmd",
+  "04-week12.Rmd",
+  "04-week13.Rmd",
+  "04-week14.Rmd",
+  "05-looking-further.Rmd"
   
   ]
 

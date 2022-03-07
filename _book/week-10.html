@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Welcome to DTS 201 | Introduction to Data Science @ Capital CC</title>
+<title>Week 10 | Introduction to Data Science @ Capital CC</title>
 <meta name="author" content="Dr. Andre Freeman, Capital CC">
-<meta name="description" content="DTS 201 resources for students">
+<meta name="description" content="Functions  Functions are helpful tools in R applications. This week you will build functions to support web scraping tasks. Unit 2 - Deck 21: Functions Slides  Video  R4DS :: Chp 19 - Functions ...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Welcome to DTS 201 | Introduction to Data Science @ Capital CC">
+<meta property="og:title" content="Week 10 | Introduction to Data Science @ Capital CC">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://introds.org/">
+<meta property="og:url" content="https://introds.org/week-10.html">
 <meta property="og:image" content="https://introds.org//DSboxCCC.png">
-<meta property="og:description" content="DTS 201 resources for students">
+<meta property="og:description" content="Functions  Functions are helpful tools in R applications. This week you will build functions to support web scraping tasks. Unit 2 - Deck 21: Functions Slides  Video  R4DS :: Chp 19 - Functions ...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Welcome to DTS 201 | Introduction to Data Science @ Capital CC">
-<meta name="twitter:description" content="DTS 201 resources for students">
+<meta name="twitter:title" content="Week 10 | Introduction to Data Science @ Capital CC">
+<meta name="twitter:description" content="Functions  Functions are helpful tools in R applications. This week you will build functions to support web scraping tasks. Unit 2 - Deck 21: Functions Slides  Video  R4DS :: Chp 19 - Functions ...">
 <meta name="twitter:image" content="https://introds.org//DSboxCCC.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="active" href="index.html">Welcome to DTS 201</a></li>
+<li><a class="" href="index.html">Welcome to DTS 201</a></li>
 <li class="book-part">Introduction</li>
 <li><a class="" href="week-1.html">Week 1</a></li>
 <li class="book-part">Exploring Data</li>
@@ -54,7 +54,7 @@
 <li><a class="" href="week-6.html">Week 6</a></li>
 <li><a class="" href="week-7.html">Week 7</a></li>
 <li><a class="" href="week-9.html">Week 9</a></li>
-<li><a class="" href="week-10.html">Week 10</a></li>
+<li><a class="active" href="week-10.html">Week 10</a></li>
 <li><a class="" href="week-11.html">Week 11</a></li>
 <li><a class="" href="week-12.html">Week 12</a></li>
 <li><a class="" href="week-13.html">Week 13</a></li>
@@ -68,44 +68,87 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><!--bookdown:title:end--><!--bookdown:title:start--><div id="welcome-to-dts-201" class="section level1 unnumbered">
-<h1>Welcome to DTS 201<a class="anchor" aria-label="anchor" href="#welcome-to-dts-201"><i class="fas fa-link"></i></a>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="week-10" class="section level1 unnumbered">
+<h1>Week 10<a class="anchor" aria-label="anchor" href="#week-10"><i class="fas fa-link"></i></a>
 </h1>
-<div class="inline-figure"><img src="DSatCCC.png" width="587" height="283"></div>
-<p><br>Welcome to the website for the <b>Data Science in R</b> at Capital Community College!</p>
-<p>This website hosts the supplementary course videos (and the slide decks used in the videos) as well as information on access to computational resources for the courses.</p>
-<p><br></p>
-<div id="license" class="section level2 unnumbered">
-<h2>License<a class="anchor" aria-label="anchor" href="#license"><i class="fas fa-link"></i></a>
+<div id="functions" class="section level2 unnumbered">
+<h2>Functions<a class="anchor" aria-label="anchor" href="#functions"><i class="fas fa-link"></i></a>
 </h2>
-<p><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"></a><br>This online work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a>.
-Visit <a href="https://github.com/dukestatsciintrods/blob/master/LICENSE.md">here</a> for more information about the license.</p>
+<p>
+</p>
+<p>Functions are helpful tools in R applications.
+This week you will build functions to support web scraping tasks.</p>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 21: Functions</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d21-functions/u2-d21-functions.html#1">Slides</a></p>
 </div>
-<div id="acknowledgements" class="section level2 unnumbered">
-<h2>Acknowledgements<a class="anchor" aria-label="anchor" href="#acknowledgements"><i class="fas fa-link"></i></a>
+<div class="video">
+<p><a href="https://youtu.be/6KWlPhPMluE">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/functions.html">Chp 19 - Functions</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 2 - Deck 22: Iteration</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d22-iteration/u2-d22-iteration.html#1">Slides</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/x3UMny1fQhc">Video</a></p>
+</div>
+<div class="reading">
+<p>R4DS :: <a href="https://r4ds.had.co.nz/iteration.html">Chp 20 - Iteration</a></p>
+</div>
+</div>
+</div>
+<div id="lab-university-of-edinburgh-art-collection" class="section level2 unnumbered">
+<h2>Lab: University of Edinburgh Art Collection<a class="anchor" aria-label="anchor" href="#lab-university-of-edinburgh-art-collection"><i class="fas fa-link"></i></a>
 </h2>
-<p>Much of these materials have been adapted from <a href="https://datasciencebox.org/">Data Science in a Box</a>, by Mine Çetinkaya-Rundel under the Creative Commons Attribution Share Alike 4.0 International.</p>
-
+<p>
+</p>
+<p>Download and open the <strong>University</strong> R-markdown file from Blackboard.
+This file is contained within a zip file.
+Open it in R-Studio.</p>
+<p><strong>Instructions:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Knit the markdown document to make sure the file compiles successfully.</li>
+<li>Edit the markdown document as instructed.</li>
+<li>Rename and upload the completed markdown file to the assignment in Blackboard.</li>
+</ol>
+</div>
+<div id="exercise-money-in-politics" class="section level2 unnumbered">
+<h2>Exercise: Money in Politics<a class="anchor" aria-label="anchor" href="#exercise-money-in-politics"><i class="fas fa-link"></i></a>
+</h2>
+<p>
+</p>
+<p>Download and open the <strong>Money</strong> R-markdown file from Blackboard.
+Open it in R-Studio.</p>
+<p><strong>Instructions:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Knit the markdown document to make sure the file compiles successfully.</li>
+<li>Edit the markdown document as instructed.</li>
+<li>Rename and upload the completed markdown file to the assignment in Blackboard.</li>
+</ol>
 </div>
 </div>
-
-
-
   <div class="chapter-nav">
-<div class="empty"></div>
-<div class="next"><a href="week-1.html">Week 1</a></div>
+<div class="prev"><a href="week-9.html">Week 9</a></div>
+<div class="next"><a href="week-11.html">Week 11</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#welcome-to-dts-201">Welcome to DTS 201</a></li>
-<li><a class="nav-link" href="#license">License</a></li>
-<li><a class="nav-link" href="#acknowledgements">Acknowledgements</a></li>
+<li><a class="nav-link" href="#week-10">Week 10</a></li>
+<li><a class="nav-link" href="#functions">Functions</a></li>
+<li><a class="nav-link" href="#lab-university-of-edinburgh-art-collection">Lab: University of Edinburgh Art Collection</a></li>
+<li><a class="nav-link" href="#exercise-money-in-politics">Exercise: Money in Politics</a></li>
 </ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/afreeman13/introds/blob/master/index.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/afreeman13/introds/edit/master/index.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/afreeman13/introds/blob/master/02-week10.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/afreeman13/introds/edit/master/02-week10.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>

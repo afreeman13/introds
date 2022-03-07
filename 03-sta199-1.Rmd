@@ -1,9 +1,0 @@
-# STA 199 - Section 1 {#sta199-1 .unnumbered}
-
-**Introduction to Data Science and Statistical Thinking (STA 199-001)**
-
-In Spring 2022, this section of STA 199 is taught by [Prof. Jacob Smith](https://scholars.duke.edu/person/jacob.f.smith).
-
-The TAs for the course are Blossom Mojekwu, Larry Chen, Carly Grossfield, Jasmine Wen, Amber Potter, Alison Reynolds, Kevin Li, Jacob Miller, and Kartik Chamarti.
-
-Go to the [**STA 199 - Section 1 course website**](https://sta199-spring2022.netlify.app/) for course specific information.
