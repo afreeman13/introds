@@ -51,6 +51,5 @@ Open it in R-Studio.
 
 **Instructions:**
 
-1.  Knit the markdown document to make sure the file compiles successfully.
-2.  Edit the markdown document as instructed.
-3.  Rename and upload the completed markdown file to the assignment in Blackboard.
+1.  Open up the IMDB movies R-script and IMDB movies TV Shows R-script.
+2.  Watch the Web Scraping videos and follow the instructions to complete the activity. This week you **don't** have to upload any work to Blackboard. There is no assignment in Blackboard to upload a file.
