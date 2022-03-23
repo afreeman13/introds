@@ -47,7 +47,7 @@ Web scraping is an important application in Data Science, given the wealth of in
 <p>
 
 Download and open the **IMDB Web Scraping** zip file from Blackboard.
-Open it in R-Studio.
+Open R scripts in R-Studio.
 
 **Instructions:**
 
