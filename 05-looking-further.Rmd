@@ -62,7 +62,7 @@ Note that the slides in this unit are a bit more sparse than the others, and muc
 :::
 :::
 
-## Machine Learning
+## Machine Learning {.unnumbered}
 
 ::: {.slide-deck}
 **Unit 5 - Deck 6: Machine learning**
@@ -76,7 +76,7 @@ Note that the slides in this unit are a bit more sparse than the others, and muc
 :::
 :::
 
-## Bayesian Inference
+## Bayesian Inference {.unnumbered}
 
 ::: {.slide-deck}
 **Unit 5 - Deck 7: Bayesian inference**

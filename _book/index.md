@@ -4,7 +4,7 @@ site: bookdown::bookdown_site
 title: "Introduction to Data Science @ Capital CC"
 author: "Dr. Andre Freeman, Capital CC"
 description: "DTS 201 resources for students"
-date: "2022-03-22"
+date: "2022-04-18"
 github-repo: https://github.com/afreeman13/introds
 twitter-handle: 
 cover-image: DSboxCCC.png

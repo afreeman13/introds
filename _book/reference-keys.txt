@@ -1,4 +1,0 @@
-uncertainty-qquantification
-machine-learning
-bayesian-inference
-uncertainty-quantification
